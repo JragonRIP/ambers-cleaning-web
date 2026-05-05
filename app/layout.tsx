@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 const siteDescription =
-  "Commercial office and facility cleaning from Amber's Cleaning Service, LLC. Insured, dependable crews serving businesses since 2018.";
+  "Commercial office and facility cleaning across Menominee, Delta, and Dickinson counties, Michigan. Amber's Cleaning Service, LLC: insured, dependable, no long-term contracts.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

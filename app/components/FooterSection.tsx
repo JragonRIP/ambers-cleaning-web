@@ -75,7 +75,9 @@ export function FooterSection() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/45">
                 Service area
               </span>
-              <span className="mt-1 block text-white/78">Placeholder for primary service areas</span>
+              <span className="mt-1 block text-white/78">
+                Menominee, Delta, and Dickinson counties, Michigan
+              </span>
             </p>
           </div>
         </div>
