@@ -2,25 +2,223 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2c2c2c;
+  --brand-teal: #5bada0;
+  --brand-teal-dark: #4a9287;
+  --brand-charcoal: #2c2c2c;
+  --brand-charcoal-soft: #3d3d3d;
+  --brand-gold: #c9a962;
+  --brand-gold-soft: rgba(201, 169, 98, 0.22);
+  --hero-overlay: rgba(91, 173, 160, 0.42);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-dark: var(--brand-teal-dark);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-charcoal-soft: var(--brand-charcoal-soft);
+  --color-brand-gold: var(--brand-gold);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.texture-grain {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.03),
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: hero-fade-up 1s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hero-animate-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.hero-animate-delay-2 {
+  animation-delay: 0.22s;
+}
+
+.hero-animate-delay-3 {
+  animation-delay: 0.32s;
+}
+
+.hero-animate-delay-4 {
+  animation-delay: 0.42s;
+}
+
+.hero-animate-delay-5 {
+  animation-delay: 0.52s;
+}
+
+@keyframes logo-soft {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes divider-grow {
+  from {
+    transform: scaleX(0.28);
+    opacity: 0.35;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hero-shimmer {
+  from {
+    opacity: 0.78;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes line-grow {
+  from {
+    transform: scaleX(0.15);
+    opacity: 0.45;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.82;
+    transform: scale(0.94);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-logo-soft {
+    animation: logo-soft 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-divider-grow {
+    animation: divider-grow 1.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-float-soft {
+    animation: float-soft 7s ease-in-out infinite;
+  }
+
+  .animate-hero-shimmer {
+    animation: hero-shimmer 2.4s ease-out both;
+  }
+
+  .animate-line-grow {
+    animation: line-grow 1s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+    transform-origin: left center;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 3.5s ease-in-out infinite;
+  }
+}
+
+@keyframes page-soft-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-page-soft-in {
+    animation: page-soft-in 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-soft,
+  .animate-divider-grow,
+  .animate-float-soft,
+  .animate-hero-shimmer,
+  .animate-line-grow,
+  .animate-pulse-soft,
+  .animate-page-soft-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
