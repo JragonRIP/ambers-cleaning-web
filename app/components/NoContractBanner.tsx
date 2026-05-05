@@ -11,17 +11,19 @@ export function NoContractBanner() {
           <div className="flex shrink-0 justify-center lg:justify-start">
             <div className="relative">
               <div
-                className="flex h-[11.25rem] w-[11.25rem] flex-col items-center justify-center rounded-full border-[5px] border-brand-gold/50 bg-white px-6 pb-3 pt-6 text-center shadow-[0_12px_40px_-12px_rgba(91,173,160,0.35)] ring-[6px] ring-brand-teal/12 sm:h-[12.5rem] sm:w-[12.5rem] sm:pb-4 sm:pt-7"
+                className="flex h-[11.25rem] w-[11.25rem] flex-col items-center justify-center rounded-full border-[5px] border-brand-gold/50 bg-white px-5 pb-2.5 pt-6 text-center shadow-[0_12px_40px_-12px_rgba(91,173,160,0.35)] ring-[6px] ring-brand-teal/12 sm:h-[12.5rem] sm:w-[12.5rem] sm:px-6 sm:pb-3 sm:pt-7"
                 aria-hidden
               >
                 <span className="font-serif text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-brand-teal-dark">
                   Our pledge
                 </span>
-                <span className="mt-3 font-serif text-2xl font-bold leading-none tracking-tight text-brand-charcoal sm:text-[1.75rem]">
+                <span className="mt-2.5 font-serif text-2xl font-bold leading-none tracking-tight text-brand-charcoal sm:mt-3 sm:text-[1.75rem]">
                   No contract
                 </span>
-                <span className="mt-2 font-serif text-lg font-semibold text-brand-teal-dark">required</span>
-                <span className="mx-auto mt-4 max-w-[9rem] border-t border-brand-charcoal/10 pt-3 font-sans text-[11px] font-medium uppercase tracking-[0.12em] text-brand-charcoal/55">
+                <span className="mt-1.5 font-serif text-lg font-semibold leading-tight text-brand-teal-dark sm:mt-2">
+                  required
+                </span>
+                <span className="mx-auto mt-2 max-w-[9.5rem] border-t border-brand-charcoal/10 pt-2 font-sans text-[10px] font-medium uppercase leading-snug tracking-[0.12em] text-brand-charcoal/55 sm:mt-2.5 sm:max-w-[10rem] sm:pt-2.5 sm:text-[11px]">
                   Work that earns every visit
                 </span>
               </div>
