@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { TreeMark } from "./TreeMark";
 
 export function HeroSection() {
   return (
@@ -24,8 +23,7 @@ export function HeroSection() {
             aria-hidden
           />
           <div className="texture-grain absolute inset-0 opacity-60" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-8 text-center text-white/88">
-            <TreeMark className="h-16 w-16 text-white/55 sm:h-20 sm:w-20" aria-hidden />
+          <div className="absolute inset-0 flex flex-col items-center justify-center px-8 text-center text-white/88">
             <p className="max-w-sm font-serif text-xl italic leading-snug text-white/95 sm:text-2xl">
               Placeholder for professional cleaning photography
             </p>
@@ -35,10 +33,6 @@ export function HeroSection() {
       </div>
 
       <div className="relative order-2 flex flex-1 flex-col justify-center px-6 pb-16 pt-28 sm:px-10 lg:order-1 lg:py-24 lg:pl-12 lg:pr-10 xl:pl-16">
-        <div className="pointer-events-none absolute -left-24 top-20 hidden opacity-[0.07] lg:block">
-          <TreeMark className="h-[28rem] w-[28rem] text-brand-teal" aria-hidden />
-        </div>
-
         <div className="relative z-[46] mx-auto w-full max-w-xl lg:mx-0">
           <p className="hero-animate mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-brand-teal-dark">
             <span className="h-px w-8 bg-brand-gold/90 animate-line-grow" aria-hidden />
