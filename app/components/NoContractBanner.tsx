@@ -11,7 +11,7 @@ export function NoContractBanner() {
           <div className="flex shrink-0 justify-center lg:justify-start">
             <div className="relative">
               <div
-                className="flex h-[11.25rem] w-[11.25rem] flex-col items-center justify-center rounded-full border-[5px] border-brand-gold/50 bg-white px-6 text-center shadow-[0_12px_40px_-12px_rgba(91,173,160,0.35)] ring-[6px] ring-brand-teal/12 sm:h-[12.5rem] sm:w-[12.5rem]"
+                className="flex h-[11.25rem] w-[11.25rem] flex-col items-center justify-center rounded-full border-[5px] border-brand-gold/50 bg-white px-6 pb-3 pt-6 text-center shadow-[0_12px_40px_-12px_rgba(91,173,160,0.35)] ring-[6px] ring-brand-teal/12 sm:h-[12.5rem] sm:w-[12.5rem] sm:pb-4 sm:pt-7"
                 aria-hidden
               >
                 <span className="font-serif text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-brand-teal-dark">
@@ -38,11 +38,27 @@ export function NoContractBanner() {
             >
               The work earns your trust, not a signature.
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-brand-charcoal/78">
-              Amber does not lock clients into long-term contracts. She believes quality work should speak for itself.
-              When you are happy with our cleaning, you will keep choosing Amber&apos;s Cleaning Service. If something
-              ever falls short, you are never stuck in paperwork you did not want.
-            </p>
+
+            <figure className="mt-6">
+              <blockquote className="relative rounded-r-2xl border-l-[3px] border-brand-teal/45 bg-white/70 py-6 pl-6 pr-5 shadow-sm ring-1 ring-brand-charcoal/[0.05] sm:py-7 sm:pl-10 sm:pr-8">
+                <span
+                  className="pointer-events-none absolute left-3 top-4 font-serif text-[3.75rem] leading-none text-brand-teal/20 sm:left-5 sm:top-5 sm:text-[4.5rem]"
+                  aria-hidden
+                >
+                  &ldquo;
+                </span>
+                <p className="relative z-[1] pt-1 font-serif text-xl italic leading-[1.65] text-brand-charcoal sm:text-2xl">
+                  I don&apos;t lock clients into long term contracts. I believe quality work should speak for itself.
+                  When you are happy with our cleaning, you will keep choosing Amber&apos;s Cleaning Service. If
+                  something ever falls short, you are never stuck in paperwork you did not want.
+                </p>
+              </blockquote>
+              <figcaption className="mt-5 text-center font-sans text-sm font-semibold tracking-wide text-brand-charcoal/75 lg:text-left">
+                <span className="text-brand-charcoal">Amber M. Fazer</span>
+                <span className="mx-2 font-normal text-brand-charcoal/45">·</span>
+                <span className="font-normal text-brand-charcoal/60">Owner</span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
