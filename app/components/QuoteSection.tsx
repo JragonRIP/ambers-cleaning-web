@@ -180,10 +180,6 @@ export function QuoteSection() {
           >
             Request My Free Quote
           </button>
-          <p className="text-sm leading-relaxed text-brand-charcoal/55">
-            First submission activates FormSubmit confirmation email to{" "}
-            <span className="font-medium text-brand-charcoal/72">amberfazer@gmail.com</span>. Approve the link once to start receiving messages from this form.
-          </p>
         </form>
       </div>
     </section>
