@@ -32,7 +32,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="relative order-2 flex flex-1 flex-col justify-center px-6 pb-16 pt-28 sm:px-10 lg:order-1 lg:py-24 lg:pl-12 lg:pr-10 xl:pl-16">
+      <div className="relative order-2 flex flex-1 flex-col justify-center px-6 pb-16 pt-10 sm:px-10 sm:pt-14 lg:order-1 lg:py-24 lg:pl-12 lg:pr-10 xl:pl-16">
         <div className="relative z-[46] mx-auto w-full max-w-xl lg:mx-0">
           <p className="hero-animate mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.28em] text-brand-teal-dark">
             <span className="h-px w-8 bg-brand-gold/90 animate-line-grow" aria-hidden />
